@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Log in</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-login.css" rel="stylesheet" type="text/css" />
+  <link href="style-signup.css" rel="stylesheet" type="text/css" />
 </head>
 
 <header class="main-header" id="main-header-id">
@@ -76,7 +76,7 @@
   </div>
 </header>
 
-
+<div class="body"></div>
 
 
 <script src="app.js"></script>
