@@ -81,7 +81,7 @@
 </div><br>
 <div class="login">
   <div class="login-container">
-    <form method="POST" action="login.php">
+    <form method="POST" action="">
       <input type="text" placeholder="username" name="username"><br>
       <input type="password" placeholder="password" name="password"><br>
       <input type="submit" value="Login" name="submit">
