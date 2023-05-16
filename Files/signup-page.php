@@ -78,7 +78,7 @@
 
 <div class="bg"></div>
 
-<div id = "register-form">
+<div class = "register" id = "register-form">
 
       <form method = "POST" action = "">
         <h2 class = "register-header">Sign Up Here!</h2>

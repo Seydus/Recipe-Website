@@ -215,7 +215,7 @@
   margin-bottom: 30px;
 }
 
-input[type="text"], input[type="password"] {
+.register input[type="text"], input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 5px;
   display: block;
