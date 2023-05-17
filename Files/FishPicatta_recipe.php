@@ -78,7 +78,7 @@
         <p>Posted on March 69, 2069</p>
       </div>
 
-      <div class="FishPicatta.jpg"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/FishPicatta.jpg');"></div>
     </section>
 
   </div>
