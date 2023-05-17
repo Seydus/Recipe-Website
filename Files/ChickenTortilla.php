@@ -73,12 +73,12 @@
   <div class="recipe-headers">
     <section>
       <div class="recipe-title">
-        <h3>Adobong Manok</h3>
-        <h6>by Rhenz Largo</h6>
-        <p>Posted on February 69, 6969</p>
+        <h3>Chicken Tortilla Soup</h3>
+        <h6>by Tyler Heinrich</h6>
+        <p>Posted on January 12, 0000</p>
       </div>
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenAdobo.jpg');"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenTortillaSoup.jpg');"></div>
     </section>
 
   </div>
@@ -87,11 +87,9 @@
 
     <div class="recipe-dish-description">
 
-      <p>Adobong manok, often called "chicken adobo," is often considered the national dish of the Philippines. Although
-        the origins of its name are with the Spanish colonizers — adobo is the Spanish word for a marinade — Filipinos
-        have been making tart, vinegar-based dishes since time immemorial. The vinegar marinade makes a dish that stores
-        very well in the Filipino heat. Endless varieties of adobo exist and each region has its own specialty. Besides
-        chicken and pork, adobo can be made with fish, squid, green bean and even eggplant.</p>
+      <p>Tortilla soup is a Mexican-inspired soup made with a tomato broth base. Chicken 
+        Tortilla soup can also be made with lamb, beef, or fish, but since this is chicken tortilla soup,
+        I use chicken breasts. You can also use skinless chicken thighs or shredded chicken</p>
 
     </div>
 

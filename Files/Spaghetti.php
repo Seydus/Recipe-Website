@@ -78,7 +78,7 @@
         <p>Posted on February 42, 1821</p>
       </div>
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/Spaghetti.jpg');"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenTortillaSoup.jpg');"></div>
     </section>
 
   </div>
@@ -91,9 +91,7 @@
          Whether you're preparing for a fancy date night or a dinner party night amongst friends, we've got all the ways you can liven
          up your spaghetti game. When there are so many classic Italian pasta dishes, it can be hard to choose. Especially when that
          means you could have pasta puttanesca, carbonara, and or spaghetti Bolognese. Whatever you choose, don't skimp on the Parmesan cheese.
-         Maybe you're craving the more cheesy side of the pasta spectrum, and we 100% support that. In that case, it doesn't get any better than 
-         our lemon ricotta pasta, creamy three-cheese spaghetti, brie spaghetti, and of course, cacio e pepe. Our best pro-tip no matter how you 
-         dress your spaghetti: Save that pasta water! The starchiness of the pasta water, when tossed with your spaghetti, allows for the sauce to slick every noodle.</p>
+         Maybe you're craving the more cheesy side of the pasta spectrum, and we 100% support that.</p>
 
     </div>
 
@@ -101,30 +99,26 @@
 
       <h3>Ingredients</h3>
       <ul>
-        <li>1/2 pound ground beef</li>
-        <li>3/4 cup thinly sliced green onions</li>
-        <li>3 cans (8 ounces each) tomato sauce</li>
-        <li>2 teaspoons sugar</li>
-        <li>1 teaspoon Worcestershire sauce</li>
-        <li>1/2 teaspoon salt</li>
-        <li>1/8 teaspoon pepper</li>
-        <li>1 can (2-1/4 ounces) sliced ripe olives, drained</li>
-        <li>Cooked spaghetti</li>
-        <li>Grated Parmesan cheese</li>
-        <li>Bacon bits, optional</li>
+        <li>1 Tbsp olive oil</li>
+        <li>1 medium onion, chopped</li>
+        <li>3 garlic cloves, minced</li>
+        <li>1 jalapeno pepper , seeded and diced</li>
+        <li>1 tsp ground cumin</li>
+        <li>1 tsp chilli powder</li>
+        <li>1 lb chicken breasts, (2 medium)</li>
+        <li>20 oz can crushed tomatoes</li>
+        <li>32 oz chicken broth </li>
+        <li>14 oz can black beans, drained and rinsed</li>
+        <li>14 oz can corn, drained and rinsed</li>
       </ul>
 
       <h3>Instructions</h3>
       <ol>
-        <li>Heat oil in a cooking pot. Saute garlic and onion until the garlic turns light brown and the onion softens.
+        <li>Preheat a pan with 1/4 cup oil over medium-high heat. Cut tortillas into thin strips and fry them in batches in the hot oil until crisp.
         </li>
-        <li>Add chicken pieces. Cook until the chicken turns light brown.</li>
-        <li>Pour water, soy sauce, and vinegar. Let boil.</li>
-        <li>Add Knorr Chicken Cube, whole peppercorn, and dried bay leaves. Stir. Cover the pot and cook in medium heat
-          for 15 minutes.</li>
-        <li>Turn the chicken pieces over. Cover and continue to cook for another 15 minutes.</li>
-        <li>Add dark brown sugar and season with salt.</li>
-        <li>Transfer to a serving bowl. Serve. Share and enjoy!</li>
+        <li>Preheat a pot with oil over medium-high heat. Add chopped onion, garlic and chopped jalapeño and sauté until veggies soften.</li>
+        <li>PRemove chicken from the pot and shred it using 2 forks. Add shredded chicken back to the soup and simmer another 5 minutes then add lime juice.</li>
+        <li>Serve the soup with some tortilla strips, pieces of avocado, fresh cilantro and lime wedges.</li>
       </ol>
     </div>
   </div>
