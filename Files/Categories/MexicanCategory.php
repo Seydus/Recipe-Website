@@ -73,69 +73,20 @@
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Categories</h1>
+        <h1>Mexican Category</h1>
       </div>
+      
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
+          <img src="_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
           <div class="btn">
-            <a href="#">Chinese</a>
+            <a href="ChickenTortilla.php">Chicken Tortilla Soup</a>
           </div>
         </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="#">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="#">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="#">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="#">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Mexican Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="#">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="#">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="#">Italian</a>
-          </div>
-        </div>
+
+
+
+
       </div>
     </div>
   </div>
