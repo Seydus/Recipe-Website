@@ -91,9 +91,7 @@
          Whether you're preparing for a fancy date night or a dinner party night amongst friends, we've got all the ways you can liven
          up your spaghetti game. When there are so many classic Italian pasta dishes, it can be hard to choose. Especially when that
          means you could have pasta puttanesca, carbonara, and or spaghetti Bolognese. Whatever you choose, don't skimp on the Parmesan cheese.
-         Maybe you're craving the more cheesy side of the pasta spectrum, and we 100% support that. In that case, it doesn't get any better than 
-         our lemon ricotta pasta, creamy three-cheese spaghetti, brie spaghetti, and of course, cacio e pepe. Our best pro-tip no matter how you 
-         dress your spaghetti: Save that pasta water! The starchiness of the pasta water, when tossed with your spaghetti, allows for the sauce to slick every noodle.</p>
+         Maybe you're craving the more cheesy side of the pasta spectrum, and we 100% support that.</p>
 
     </div>
 
