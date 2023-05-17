@@ -11,7 +11,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Log in</title>
+  <title>Sign Up</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
   <link href="style-signup.css" rel="stylesheet" type="text/css" />
 </head>
@@ -76,9 +76,20 @@
   </div>
 </header>
 
-<div class="body"></div>
+<div class="bg"></div>
 
+<div class = "register" id = "register-form">
 
+      <form method = "POST" action = "">
+        <h2 class = "register-header">Sign Up Here!</h2>
+          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+          <input type = "text" id = "login" class = "fadeIn second" name = "email" placeholder = "Email"> 
+          <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+          <input type="submit" class="fadeIn fourth" value="Sign Up" name = "submit">
+      </form>
+
+</div>
+    
 <script src="app.js"></script>
 
 
