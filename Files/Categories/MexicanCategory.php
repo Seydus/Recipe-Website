@@ -78,7 +78,7 @@
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
+          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
           <div class="btn">
             <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
           </div>
