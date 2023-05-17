@@ -226,7 +226,6 @@ body.active .wrapper .section {
   border: 0.2px solid #bd0d0d;
   border-left: none; 
   float:right;
-  background-image: url(_Pictures/ChickenAdobo.jpg);
   background-size: cover;
 }
 
