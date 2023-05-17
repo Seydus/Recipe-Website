@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Tasty Trove</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-index.css" rel="stylesheet" type="text/css" />
+  <title>replit</title>
+  <link href="style-recipe.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,7 +19,7 @@
         </div>
         <ul>
           <li>
-            <a href="index.html" class="active">
+            <a href="index.html">
               <span class="item">Home</span>
             </a>
           </li>
@@ -70,71 +69,64 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-main-container">
-      <div class="find-a-recipe-title">
-        <h1>Find a Recipe</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Chicken Tortilla Soup</h3>
+        <h6>by Tyler Heinrich</h6>
+        <p>Posted on January 12, 0000</p>
       </div>
-      <div class="find-a-recipe-search">
-        <input type="text" placeholder="Search...">
-        <a href="index.html">
-          <img src="_Pictures/search-icon.png" alt="search-icon">
-        </a>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenTortillaSoup.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>Tortilla soup is a Mexican-inspired soup made with a tomato broth base. Chicken 
+        Tortilla soup can also be made with lamb, beef, or fish, but since this is chicken tortilla soup,
+        I use chicken breasts. You can also use skinless chicken thighs or shredded chicken</p>
+
     </div>
-    <div class="content-highlight">
-      <div class="content-hightlight-title">
-        <h1>
-          Our Newest Recipes
-        </h1>
-      </div>
-      <section class="content-highlight-elements">
-        <div class="che">
-          <a href="AdoboManok_recipe.html">
-            <img src="https://live.staticflickr.com/2438/3880492441_fc2b6d9805_k.jpg" alt="food image">
-          </a>
-          <div class="che-description">
-            <h4>Adobong Manok</h4>
-            <p>Adobong Manok is a Filipino dish made with chicken cooked in a vinegar and soy sauce-based sauce,
-              typically with garlic and other seasonings.</p>
-          </div>
-        </div>
-        <div class="che">
-          <a href="Spaghetti.php">
-            <img src="https://www.onceuponachef.com/images/2019/09/Spaghetti-and-Meatballs.jpg" alt="food image">
-          </a>
-          <div class="che-description">
-            <h4>Spaghetti</h4>
-            <p>Spaghetti is a popular Italian pasta dish typically made with long, thin noodles and a tomato-based sauce
-              that may include meat, vegetables, and herbs.</p>
-          </div>
-        </div>
-        <div class="che">
-          <a href="index.html">
-            <img
-              src="https://www.seriouseats.com/thmb/cU8x361dQjH3w8d30Xm7D2rakP4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20211201-fish-piccata-vicky-wasik-17-205e3c62dd94410f9fae9418417b4459.jpg"
-              alt="food image">
-          </a>
-          <div class="che-description">
-            <a href="FishPicatta_recipe.html">
-            <h4>Fish Piccata</h4>
-            <p>Fish Piccata is a dish made with sautéed fish, topped with a lemon-caper butter sauce.</p>
-          </a>
-        </div>
-        </div>
-        <div class="che">
-          <a href="ChickenTortilla.php">
-            <img src="https://hips.hearstapps.com/hmg-prod/images/best-soup-recipes-1660232265.jpeg" alt="food image">
-          </a>
-          <div class="che-description">
-            <h4>Chicken Tortilla Soup</h4>
-            <p>Chicken Tortilla Soup is a Mexican soup made with chicken, vegetables, and spices, served with tortilla
-              strips and toppings like cheese and avocado.</p>
-          </div>
-        </div>
-      </section>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 lbs. Chicken cut into serving pieces</li>
+        <li>1 piece Knorr Chicken Cube</li>
+        <li>1 head garlic crushed</li>
+        <li>1 piece onion chopped</li>
+        <li>6 pieces dried bay leaves</li>
+        <li>1 tablespoon whole peppercorn</li>
+        <li>½ cup soy sauce</li>
+        <li>5 tablespoons white vinegar</li>
+        <li>1 ½ tablespoons dark brown sugar</li>
+        <li>2 cups water</li>
+        <li>3 tablespoons cooking oil</li>
+        <li>Salt to taste</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Heat oil in a cooking pot. Saute garlic and onion until the garlic turns light brown and the onion softens.
+        </li>
+        <li>Add chicken pieces. Cook until the chicken turns light brown.</li>
+        <li>Pour water, soy sauce, and vinegar. Let boil.</li>
+        <li>Add Knorr Chicken Cube, whole peppercorn, and dried bay leaves. Stir. Cover the pot and cook in medium heat
+          for 15 minutes.</li>
+        <li>Turn the chicken pieces over. Cover and continue to cook for another 15 minutes.</li>
+        <li>Add dark brown sugar and season with salt.</li>
+        <li>Transfer to a serving bowl. Serve. Share and enjoy!</li>
+      </ol>
     </div>
   </div>
+
+  <!-- footer code -->
   <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
@@ -159,10 +151,10 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
+  
   <script src="app.js"></script>
 </body>
 
