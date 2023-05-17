@@ -1,5 +1,7 @@
 <?php
 
+  include 'signup-code.php'; 
+
 ?>
 
 
@@ -80,7 +82,7 @@
 
 <div class = "register" id = "register-form">
 
-      <form method = "POST" action = "">
+      <form method = "POST" action = "signup-code.php">
         <h2 class = "register-header">Sign Up Here!</h2>
           <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
           <input type = "text" id = "login" class = "fadeIn second" name = "email" placeholder = "Email"> 
