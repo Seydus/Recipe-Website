@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style-recipe.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
