@@ -73,7 +73,7 @@
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Mexican Category</h1>
+        <h1>Italian Category</h1>
       </div>
 
       <div class="content-categories-food-list">
