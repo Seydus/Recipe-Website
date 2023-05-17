@@ -73,7 +73,7 @@
   <div class="recipe-headers">
     <section>
       <div class="recipe-title">
-        <h3>Spaghetti</h3>
+        <h3>Spaghetti Bolognese</h3>
         <h6>by Gerome Johnson</h6>
         <p>Posted on February 42, 1821</p>
       </div>
