@@ -117,7 +117,7 @@
         <li>Season the fish on both sides with salt and pepper. Mix the oregano, paprika, and garlic powder and season the flesh side of the fish.
         </li>
 
-        <li>To dredge, coat the fish on both sides with the flour. Gently shake excess flour.
+        <li>To dredge, coat the fish on both sides with the flour.
         </li>
 
         <li>In a large cast iron skillet, heat the olive oil and 2 tablespoons of unsalted butter over medium-high heat. Carefully add the fish and cook for 2 to 3 minutes on each side (a total of 4 to 6 minutes), or until the fish is firm and flaky (being careful not to overcook the fish). Transfer the fish to a tray lined with paper towel to drain excess oil.
@@ -126,7 +126,7 @@
         <li>To the same pan, add 1 more tablespoon of unsalted. Lower the heat, and add the lemon juice, white wine, and capers. Cook briefly over medium heat.
         </li>
 
-        <li>Return the fish to the pan and spoon the sauce over the fish (give it just a few seconds to warm through in the sauce).
+        <li>Return the fish to the pan and spoon the sauce over the fish.
         </li>
 
         <li>Garnish with parsley and red pepper flakes, if using. Serve immediately!
