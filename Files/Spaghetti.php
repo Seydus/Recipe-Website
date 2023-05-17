@@ -105,14 +105,13 @@
         <li>3/4 cup thinly sliced green onions</li>
         <li>3 cans (8 ounces each) tomato sauce</li>
         <li>2 teaspoons sugar</li>
-        <li>6 pieces dried bay leaves</li>
-        <li>1 tablespoon whole peppercorn</li>
-        <li>½ cup soy sauce</li>
-        <li>5 tablespoons white vinegar</li>
-        <li>1 ½ tablespoons dark brown sugar</li>
-        <li>2 cups water</li>
-        <li>3 tablespoons cooking oil</li>
-        <li>Salt to taste</li>
+        <li>1 teaspoon Worcestershire sauce</li>
+        <li>1/2 teaspoon salt</li>
+        <li>1/8 teaspoon pepper</li>
+        <li>1 can (2-1/4 ounces) sliced ripe olives, drained</li>
+        <li>Cooked spaghetti</li>
+        <li>Grated Parmesan cheese</li>
+        <li>Bacon bits, optional</li>
       </ul>
 
       <h3>Instructions</h3>
