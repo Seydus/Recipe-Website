@@ -20,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="../index.html">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="../categories.html" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="../about-us-page.html">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="../login-page.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="../signup-page.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -50,22 +50,22 @@
         <div class="top-navbar">
           <div class="hamburger">
             <a class="hamburger-icon" style="cursor: pointer">
-              <img src="_Pictures/hamburger-menu.png" style="height: 20px">
+              <img src="../_Pictures/hamburger-menu.png" style="height: 20px">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="../index.html" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
-    <div class="main-header-search">
+    <div class="../main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
-          <img src="_Pictures/search-icon.png" alt="search-icon">
+        <a href="../index.html">
+          <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
@@ -78,7 +78,7 @@
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
+          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
           <div class="btn">
             <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
           </div>

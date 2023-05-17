@@ -78,7 +78,7 @@
         <p>Posted on February 42, 1821</p>
       </div>
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenTortillaSoup.jpg');"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/Spaghetti.jpg');"></div>
     </section>
 
   </div>
