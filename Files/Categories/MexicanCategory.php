@@ -61,10 +61,10 @@
         <h2>Tasty Trove</h2>
       </a>
     </div>
-    <div class="main-header-search">
+    <div class="../main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
+        <a href="../index.html">
           <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
