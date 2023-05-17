@@ -29,6 +29,7 @@
               <span class="item">Categories</span>
             </a>
           </li>
+          
           <li>
             <a href="../about-us-page.html">
               <span class="item">About Us</span>
@@ -61,7 +62,7 @@
         <h2>Tasty Trove</h2>
       </a>
     </div>
-    <div class="../main-header-search">
+    <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
         <a href="../index.html">
@@ -78,7 +79,7 @@
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
+          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Spaghetti Image">
           <div class="btn">
             <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
           </div>
