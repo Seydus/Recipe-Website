@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Categories</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <link href="../style-categories.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -75,19 +75,19 @@
       <div class="content-categories-title">
         <h1>Mexican Category</h1>
       </div>
-      
+
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
+          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Chicken Tortilla Image">
           <div class="btn">
-            <a href="ChickenTortilla.php">Chicken Tortilla Soup</a>
+            <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
           </div>
         </div>
 
 
 
 
-      </div>
+      
     </div>
   </div>
 

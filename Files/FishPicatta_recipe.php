@@ -78,7 +78,7 @@
         <p>Posted on March 69, 2069</p>
       </div>
 
-      <div class="recipe-picture"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/FishPicatta.jpg');"></div>
     </section>
 
   </div>
@@ -87,11 +87,10 @@
 
     <div class="recipe-dish-description">
 
-      <p>Adobong manok, often called "chicken adobo," is often considered the national dish of the Philippines. Although
-        the origins of its name are with the Spanish colonizers — adobo is the Spanish word for a marinade — Filipinos
-        have been making tart, vinegar-based dishes since time immemorial. The vinegar marinade makes a dish that stores
-        very well in the Filipino heat. Endless varieties of adobo exist and each region has its own specialty. Besides
-        chicken and pork, adobo can be made with fish, squid, green bean and even eggplant.</p>
+      <p>What makes something a piccata?
+        Piccata, though, is an Italian word meaning larded. It seems to be a translation of the French word pique 
+        (sharp, as in piquant). When used in a reference to a way of preparing food (particularly meat or fish) it 
+        means sliced and sauteed in a sauce containing lemon, butter, and spices</p>
 
     </div>
 
@@ -118,7 +117,7 @@
         <li>Season the fish on both sides with salt and pepper. Mix the oregano, paprika, and garlic powder and season the flesh side of the fish.
         </li>
 
-        <li>To dredge, coat the fish on both sides with the flour. Gently shake excess flour.
+        <li>To dredge, coat the fish on both sides with the flour.
         </li>
 
         <li>In a large cast iron skillet, heat the olive oil and 2 tablespoons of unsalted butter over medium-high heat. Carefully add the fish and cook for 2 to 3 minutes on each side (a total of 4 to 6 minutes), or until the fish is firm and flaky (being careful not to overcook the fish). Transfer the fish to a tray lined with paper towel to drain excess oil.
@@ -127,7 +126,7 @@
         <li>To the same pan, add 1 more tablespoon of unsalted. Lower the heat, and add the lemon juice, white wine, and capers. Cook briefly over medium heat.
         </li>
 
-        <li>Return the fish to the pan and spoon the sauce over the fish (give it just a few seconds to warm through in the sauce).
+        <li>Return the fish to the pan and spoon the sauce over the fish.
         </li>
 
         <li>Garnish with parsley and red pepper flakes, if using. Serve immediately!
