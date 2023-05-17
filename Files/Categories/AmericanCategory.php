@@ -29,7 +29,6 @@
               <span class="item">Categories</span>
             </a>
           </li>
-          
           <li>
             <a href="../about-us-page.html">
               <span class="item">About Us</span>
@@ -74,14 +73,14 @@
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Mexican Category</h1>
+        <h1>American Category</h1>
       </div>
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Spaghetti Image">
+          <img src="../_Pictures/FishPicatta.jpg" alt="Spaghetti Image">
           <div class="btn">
-            <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
+            <a href="../FishPicatta_recipe.php">Fish Picatta</a>
           </div>
         </div>
 

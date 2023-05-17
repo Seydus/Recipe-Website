@@ -29,7 +29,6 @@
               <span class="item">Categories</span>
             </a>
           </li>
-          
           <li>
             <a href="../about-us-page.html">
               <span class="item">About Us</span>
@@ -74,14 +73,14 @@
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Mexican Category</h1>
+        <h1>Filipino Category</h1>
       </div>
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Spaghetti Image">
+          <img src="../_Pictures/ChickenAdobo.jpg" alt="Chicken Adobo Image">
           <div class="btn">
-            <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
+            <a href="../AdoboManok_recipe.html">Adobong Manok</a>
           </div>
         </div>
 
