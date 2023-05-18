@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2023 at 03:21 PM
+-- Generation Time: May 18, 2023 at 01:58 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -29,6 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `account_details` (
   `ID` int(11) NOT NULL,
+  `Fname` varchar(50) NOT NULL,
+  `Lname` varchar(50) NOT NULL,
   `Username` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Password` varchar(50) NOT NULL
@@ -38,9 +40,11 @@ CREATE TABLE `account_details` (
 -- Dumping data for table `account_details`
 --
 
-INSERT INTO `account_details` (`ID`, `Username`, `Email`, `Password`) VALUES
-(4, 'admin', 'admin123@gmail.com', '1234'),
-(5, 'Rhenz', 'rhenzlargo@gmail.com', 'darkforgel2003');
+INSERT INTO `account_details` (`ID`, `Fname`, `Lname`, `Username`, `Email`, `Password`) VALUES
+(4, '--', '--', 'admin', '--', '1234'),
+(8, 'Rhenz', 'Largo', 'ChippyS', 'rhenzlargo@gmail.com', 'darkforgel2003'),
+(10, 'Cedric', 'Rafanan', 'CedRaf', 'craf@gmail.com', '0000'),
+(11, 'Steven', 'Tiu', 'ElDorito', 'sTiu@gmail.com', 'abcd');
 
 --
 -- Indexes for dumped tables
@@ -60,7 +64,7 @@ ALTER TABLE `account_details`
 -- AUTO_INCREMENT for table `account_details`
 --
 ALTER TABLE `account_details`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

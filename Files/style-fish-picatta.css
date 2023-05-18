@@ -274,13 +274,14 @@
   /*footer code */
   .main-footer {
     background-color: black;
-    height: 150px;
+    height: 160px;
     padding: 2rem 5rem 2rem 5rem;
   }
   
   .main-footer-container {
     display: flex;
     justify-content: space-evenly;
+    
   }
   
   .main-footer-container h2, .main-footer-container p {

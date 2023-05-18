@@ -136,8 +136,8 @@
     </div>
   </div>
 
-  footer code
-  <footer class="main-footer">
+  
+    <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
