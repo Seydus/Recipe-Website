@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
@@ -70,77 +69,69 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>Categories</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Beef Bulgogi</h3>
+        <h6>by Steven Tiu</h6>
+        <p>Posted on December 21, 2022</p>
       </div>
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/ChineseCategory.php">Chinese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="Categories/VietnameCateogry.php">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="Categories/KoreanCategory.php">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="Categories/JapaneseCategory.php">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="Categories/ArabicCategory.php">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/bulgogi.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>Bulgogi, sometimes known as Korean BBQ beef, is a dish of thinly sliced grilled steak that has been marinated in a sweet soy, sesame, and garlic sauce. 
+        If you want to spice it up, serve the beef in lettuce cups with rice and hot pepper paste (gochujang)..</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>5 tablespoons soy sauce</li>
+        <li>¼ cup chopped green onion</li>
+        <li>2 ½ tablespoons white sugar </li>
+        <li>2 tablespoons minced garlic</li>
+        <li>2 tablespoons sesame seeds</li>
+        <li>2 tablespoons sesame oil </li>
+        <li>½ teaspoon ground black pepper</li>
+        <li>Pinch of salt to taste</li>
+        <li>¼ teaspoon ground white pepper</li>
+        <li>1 pound flank steak, thinly sliced</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>
+
+        <li>Whisk soy sauce, green onion, sugar, garlic, sesame seeds, sesame oil, and pepper together in a bowl. 
+        </li>
+
+        <li>Place flank steak slices in a shallow dish. Pour marinade over top. Cover and refrigerate for at least 1 hour or overnight. 
+        </li>
+
+        <li>Preheat an outdoor grill for high heat, and lightly oil the grate. 
+        </li>
+
+        <li>Quickly grill flank steak slices on the preheated grill until slightly charred and cooked through, 1 to 2 minutes per side. 
+        </li>
+
+        <li>Serve hot over rice and enjoy! 
+        </li>
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  footer code
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -164,13 +155,11 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
   <script src="app.js"></script>
-  </script>
 </body>
 
 </html>
