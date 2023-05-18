@@ -84,9 +84,9 @@
 
       <form method = "POST" action = "signup-code.php">
         <h2 class = "register-header">Sign Up Here!</h2>
-          <input type="text" name="username" placeholder="Username">
-          <input type = "text" name = "email" placeholder = "Email"> 
-          <input type="password" name="password" placeholder="Password">
+          <input type="text" name="username" placeholder="Username" require>
+          <input type = "text" name = "email" placeholder = "Email" require> 
+          <input type="password" name="password" placeholder="Password" require>
           <input type="submit" value="Sign Up" name = "submit">
       </form>
 
