@@ -231,7 +231,7 @@ body.active .wrapper .section {
 
 .recipe-content{
   margin-top: 55rem; 
-  margin-left: 30%;
+  margin-left: 27%;
 }
 
 
@@ -241,7 +241,7 @@ body.active .wrapper .section {
   text-align: justify;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.7rem;
-  width: 60%;
+  width: 65%;
   height: 16rem;
   margin-bottom: 2rem; 
 }
@@ -253,7 +253,7 @@ body.active .wrapper .section {
   background-color: #eceaea;
   padding: 4px;
   
-  width:60%;
+  width:65%;
   height:48rem; 
   margin-bottom: 2rem; 
 }
