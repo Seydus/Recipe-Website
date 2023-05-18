@@ -70,6 +70,7 @@
       </form>
     </div>
   </header>
+
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
@@ -90,9 +91,6 @@
               <a href = "../BuffaloWings_recipe.php">Buffalo Wings</a>
             </div>
         </div>
-
-
-
 
     </div>
   </div>
@@ -117,7 +115,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="_Pictures/search-icon.png" alt="search-icon">
+              <img src="../_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>

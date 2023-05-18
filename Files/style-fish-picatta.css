@@ -230,6 +230,8 @@
   }
   
   .recipe-content{
+    display: flex;
+    flex-direction: column;
     margin-top: 55rem; 
     margin-left: 27%;
   }

@@ -230,6 +230,8 @@ body.active .wrapper .section {
 }
 
 .recipe-content{
+  display: flex;
+  flex-direction: column;
   margin-top: 55rem; 
   margin-left: 27%;
 }
@@ -243,7 +245,7 @@ body.active .wrapper .section {
   font-size: 1.7rem;
   width: 65%;
   height: 16rem;
-  margin-bottom: 2rem; 
+  
 }
 
 .recipe-ingredients-instructions{
