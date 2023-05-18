@@ -78,11 +78,21 @@
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="../_Pictures/FishPicatta.jpg" alt="Spaghetti Image">
+          <img src="../_Pictures/FishPicatta.jpg" alt="Fish Piccata Image">
           <div class="btn">
             <a href="../FishPicatta_recipe.php">Fish Picatta</a>
           </div>
         </div>
+
+        <div class="food">
+          <img src = "../_Pictures/buffalo-wings.jpg" alt = "Buffalo Wings Image">
+            <div class="btn">
+              <a href = "../BuffaloWings_recipe.php">Buffalo Wings</a>
+            </div>
+        </div>
+
+
+
 
     </div>
   </div>

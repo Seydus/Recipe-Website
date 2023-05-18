@@ -75,7 +75,7 @@
       <div class="recipe-title">
         <h3>Spaghetti Bolognese</h3>
         <h6>by Gerome Johnson</h6>
-        <p>Posted on February 42, 1821</p>
+        <p>Posted on February 24, 2023</p>
       </div>
 
       <div class="recipe-picture" style="background-image: url('_Pictures/Spaghetti.jpg');"></div>

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Recipe</title>
-  <link href="style-recipe.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -73,12 +73,12 @@
   <div class="recipe-headers">
     <section>
       <div class="recipe-title">
-        <h3>Adobong Manok</h3>
-        <h6>by Rhenz Largo</h6>
-        <p>Posted on December 21, 2022</p>
+        <h3>Buffalo Wings</h3>
+        <h6>by Cedric Rafanan</h6>
+        <p>Posted on July 27, 2022</p>
       </div>
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenAdobo.jpg');"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/buffalo-wings2.jpg');"></div>
     </section>
 
   </div>
@@ -87,11 +87,9 @@
 
     <div class="recipe-dish-description">
 
-      <p>Adobong manok, often called "chicken adobo," is often considered the national dish of the Philippines. Although
-        the origins of its name are with the Spanish colonizers — adobo is the Spanish word for a marinade — Filipinos
-        have been making tart, vinegar-based dishes since time immemorial. The vinegar marinade makes a dish that stores
-        very well in the Filipino heat. Endless varieties of adobo exist and each region has its own specialty. Besides
-        chicken and pork, adobo can be made with fish, squid, green bean and even eggplant.</p>
+      <p>Buffalo wings, that ever-popular dish consisting of deep-fried chicken wings, slathered in spicy sauce and 
+        served with blue cheese dressing and raw celery and carrots, are one of those few lucky foods that are famous enough
+        to boast their very own creation myth. Heres how to make them!</p>
 
     </div>
 
@@ -99,31 +97,39 @@
 
       <h3>Ingredients</h3>
       <ul>
-        <li>2 lbs. Chicken cut into serving pieces</li>
-        <li>1 piece Knorr Chicken Cube</li>
-        <li>1 head garlic crushed</li>
-        <li>1 piece onion chopped</li>
-        <li>6 pieces dried bay leaves</li>
-        <li>1 tablespoon whole peppercorn</li>
-        <li>½ cup soy sauce</li>
-        <li>5 tablespoons white vinegar</li>
-        <li>1 ½ tablespoons dark brown sugar</li>
-        <li>2 cups water</li>
-        <li>3 tablespoons cooking oil</li>
-        <li>Salt to taste</li>
+        <li>½ cup all-purpose flour</li>
+        <li>¼ teaspoon ground paprika</li>
+        <li>¼ teaspoon cayenne pepper</li>
+        <li>¼ teaspoon salt</li>
+        <li>10 chicken wings</li>
+        <li>2 cups vegetable oil for frying, or as needed</li>
+        <li>¼ cup butter</li>
+        <li>¼ cup hot sauce</li>
+        <li>1 pinch ground black pepper</li>
+        <li>1 pinch garlic powder</li>
       </ul>
 
       <h3>Instructions</h3>
       <ol>
-        <li>Heat oil in a cooking pot. Saute garlic and onion until the garlic turns light brown and the onion softens.
+        <li>Whisk together flour, paprika, cayenne pepper, and salt in a large bowl.
         </li>
-        <li>Add chicken pieces. Cook until the chicken turns light brown.</li>
-        <li>Pour water, soy sauce, and vinegar. Let boil.</li>
-        <li>Add Knorr Chicken Cube, whole peppercorn, and dried bay leaves. Stir. Cover the pot and cook in medium heat
-          for 15 minutes.</li>
-        <li>Turn the chicken pieces over. Cover and continue to cook for another 15 minutes.</li>
-        <li>Add dark brown sugar and season with salt.</li>
-        <li>Transfer to a serving bowl. Serve. Share and enjoy!</li>
+
+        <li>Place chicken wings in the bowl with flour mixture and toss until evenly coated. Transfer wings to a 9x13-inch glass baking dish and arrange in a single layer. 
+            Cover and refrigerate for 1 to 1 1/2 hours.
+        </li>
+
+        <li>Add about 1 inch oil to a deep, heavy skillet; heat to 375 degrees F (190 degrees C). (The oil should be just enough to cover wings entirely.)
+        </li>
+
+        <li>Meanwhile, combine butter, hot sauce, pepper, and garlic powder in a separate small saucepan over low heat. Cook and stir until butter is melted and mixture is thoroughly blended.
+             Remove from the heat and reserve for serving.
+        </li>
+
+        <li>Fry coated wings in the hot oil for 10 to 15 minutes, or until they begin to crisp and turn brown. Maintain the oil temperature while cooking. Remove cooked wings from hot oil and let drain on paper towels or a wire rack.
+        </li>
+
+        <li>Transfer wings to a platter and drizzle hot sauce over top; or mix wings and hot sauce in a bowl until coated.
+        </li>
       </ol>
     </div>
   </div>
