@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Categories</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <link href="../style-categories.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="../index.html">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="../categories.html" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="../about-us-page.html">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="../login-page.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="../signup-page.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -50,22 +50,22 @@
         <div class="top-navbar">
           <div class="hamburger">
             <a class="hamburger-icon" style="cursor: pointer">
-              <img src="_Pictures/hamburger-menu.png" style="height: 20px">
+              <img src="../_Pictures/hamburger-menu.png" style="height: 20px">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="../index.html" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
-          <img src="_Pictures/search-icon.png" alt="search-icon">
+        <a href="../index.html">
+          <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
@@ -73,70 +73,21 @@
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Categories</h1>
+        <h1>Indian Category</h1>
       </div>
+
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
+          <img src="../_Pictures/ChickenCurry.jpg" alt="Chicken Curry Image">
           <div class="btn">
-            <a href="#">Chinese</a>
+            <a href="../ChickenCurry.php">Murg Kari</a>
           </div>
         </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="#">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="#">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="#">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+
+
+
+      
     </div>
   </div>
 
@@ -169,8 +120,8 @@
     </div>
   </footer>
   
-  <script src="app.js"></script>
-  </script>
+  <script src="../app.js"></script>
+  
 </body>
 
 </html>
