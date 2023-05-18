@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
@@ -70,77 +69,75 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>Categories</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Murgh Kari (Indian Chicken Curry)</h3>
+        <h6>by John Jomel</h6>
+        <p>Posted on August 50, 2050</p>
       </div>
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="#">Chinese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="#">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="#">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="#">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/FishPicatta.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>Enjoy the lavishly delicious taste of chicken curry at home with this easy-to-follow recipe. 
+        Bold spices like ginger, cumin, and curry powder add rich layers of flavor to succulent chicken coated 
+        in a creamy tomato-based sauce. Fill your kitchen with the delightful fragrance of a creamy, spicy, 
+        and filling curry that the whole family will love.</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 pounds skinless, boneless chicken breast halves </li>
+        <li>2 teaspoons salt</li>
+        <li>½ cup cooking oil</li>
+        <li>1 ½ cups chopped onion</li>
+        <li>1 tablespoon minced garlic</li>
+        <li>1 ½ teaspoons minced fresh ginger root</li>
+        <li>1 tablespoon curry powder</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground turmeric</li>
+        <li>1 tablespoon water</li>
+        <li>1 (15 ounce) can crushed tomatoes</li>
+        <li>1 cup plain yogurt</li>
+        <li>1 tablespoon chopped fresh cilantro</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Sprinkle the chicken breasts with 2 teaspoons salt.
+        </li>
+
+        <li>Heat oil in a large skillet over high heat; partially cook the chicken in the hot oil in batches until completely browned on all sides. Transfer browned chicken breasts to a plate and set aside.
+        </li>
+
+        <li>Add onion, garlic, and ginger to the oil remaining in the skillet. Cook and stir until onion turns soft and translucent, 5 to 8 minutes. Stir curry powder, cumin, turmeric, coriander, cayenne, and 1 tablespoon of water into the onion mixture; heat for 1 minute
+        </li>
+
+        <li>Add tomatoes, yogurt, 1 tablespoon chopped cilantro, and 1 teaspoon salt to the mixture; stir to combine.
+        </li>
+
+        <li>Return chicken breast to the skillet along with any juices on the plate. Pour in 1/2 cup water and bring to a boil, turning the chicken to coat with the sauce. Sprinkle garam masala and 1 tablespoon cilantro over the chicken.
+        </li>
+
+        <li>Cover the skillet and simmer until chicken breasts are no longer pink in the center and the juices run clear, about 20 minutes. Drizzle with lemon juice
+        </li>
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  <!-- footer code -->
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -164,13 +161,11 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
   <script src="app.js"></script>
-  </script>
 </body>
 
 </html>
