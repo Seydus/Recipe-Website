@@ -84,10 +84,6 @@
           </div>
         </div>
 
-
-
-
-      
     </div>
   </div>
 
@@ -120,8 +116,10 @@
     </div>
   </footer>
   
-  <script src="app.js"></script>
-  </script>
+ 
+
 </body>
+
+<script src="../app.js"></script>
 
 </html>

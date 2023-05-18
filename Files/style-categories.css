@@ -234,8 +234,9 @@ body.active .wrapper .section {
 }
 
 .content-categories-food-list .food .btn {
-    margin: 14px;
+  margin: 14px;
 }
+
 
 .content-categories-food-list .food .btn a {
   padding: 8px 18px 8px 18px;
@@ -247,6 +248,7 @@ body.active .wrapper .section {
   cursor: pointer;
   background: black;
 }
+
 
 /*
 .btn{

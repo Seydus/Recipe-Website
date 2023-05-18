@@ -76,9 +76,9 @@
 </header>
 
 <div class="body"></div>
-<div class="header">
+<br>
 
-</div><br>
+
 <div class="login">
   <div class="login-container">
     <form method="POST" action="">
@@ -89,6 +89,9 @@
 
   </div>
 </div>
+
+
+
 
 <script src="app.js"></script>
 

@@ -84,10 +84,10 @@
 
       <form method = "POST" action = "signup-code.php">
         <h2 class = "register-header">Sign Up Here!</h2>
-          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
-          <input type = "text" id = "login" class = "fadeIn second" name = "email" placeholder = "Email"> 
-          <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
-          <input type="submit" class="fadeIn fourth" value="Sign Up" name = "submit">
+          <input type="text" name="username" placeholder="Username">
+          <input type = "text" name = "email" placeholder = "Email"> 
+          <input type="password" name="password" placeholder="Password">
+          <input type="submit" value="Sign Up" name = "submit">
       </form>
 
 </div>

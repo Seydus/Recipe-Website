@@ -81,13 +81,9 @@
         <div class="food">
           <img src="../_Pictures/ChickenTortillaSoup.jpg" alt="Spaghetti Image">
           <div class="btn">
-            <a href="../ChickenTortilla.php">Chicken Tortilla Soup</a>
+            <a href="../ChickenTortilla.php">Chicken Soup</a>
           </div>
         </div>
-
-
-
-
       
     </div>
   </div>
@@ -121,8 +117,7 @@
     </div>
   </footer>
   
-  <script src="app.js"></script>
-  </script>
+  <script src="../app.js"></script>
 </body>
 
 </html>

@@ -120,8 +120,8 @@
     </div>
   </footer>
   
-  <script src="app.js"></script>
-  </script>
+  <script src="../app.js"></script>
+  
 </body>
 
 </html>
