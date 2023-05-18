@@ -78,7 +78,7 @@
         <p>Posted on August 50, 2050</p>
       </div>
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/FishPicatta.jpg');"></div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenCurry.jpg');"></div>
     </section>
 
   </div>

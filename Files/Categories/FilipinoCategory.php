@@ -80,7 +80,7 @@
         <div class="food">
           <img src="../_Pictures/ChickenAdobo.jpg" alt="Chicken Adobo Image">
           <div class="btn">
-            <a href="../AdoboManok_recipe.html">Adobong Manok</a>
+            <a href="../AdoboManok.php">Adobong Manok</a>
           </div>
         </div>
 
