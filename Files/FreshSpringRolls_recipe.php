@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
@@ -70,77 +69,61 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>Categories</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Vietnamese Fresh Spring Rolls</h3>
+        <h6>by Steven Tiu</h6>
+        <p>Posted on January 12, 2023</p>
       </div>
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/ChineseCategory.php">Chinese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="Categories/VietnameCateogry.php">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="#">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="#">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/SpringRoll.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>These Vietnamese spring rolls are a refreshing change from the usual fried variety and have become a family favorite.</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 ounces rice vermicelli</li>
+        <li>8 rice wrappers (8.5 inch diameter)</li>
+        <li>8 large cooked shrimp - peeled, deveined and cut in half</li>
+        <li>2 leaves lettuce, chopped</li>
+        <li>3 tablespoons chopped fresh mint leaves</li>
+        <li>3 tablespoons chopped fresh cilantro</li>
+        <li>1 ⅓ tablespoons chopped fresh Thai basil</li>
+        
+
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Cook pasta uncovered, stirring occasionally, until the pasta is tender yet firm to the bite, 3 to 5 minutes. 
+        </li>
+
+        <li>Fill a large bowl with warm water. Dip one wrapper into the hot water for 1 second to soften. Lay wrapper flat; place 2 shrimp halves in a row across the center, add some vermicelli, lettuce, mint, cilantro, and basil, leaving about 2 inches uncovered on each side.
+        </li>
+
+        <li>Fold uncovered sides inward, then tightly roll the wrapper, beginning at the end with lettuce. Repeat with remaining ingredients. 
+        </li>
+
+       
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  footer code
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -164,13 +147,11 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
   <script src="app.js"></script>
-  </script>
 </body>
 
 </html>

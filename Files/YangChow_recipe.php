@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
@@ -70,77 +69,72 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>Categories</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Yang Chow Fried Rice</h3>
+        <h6>by Steven Tiu</h6>
+        <p>Posted on March 18, 2023</p>
       </div>
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/ChineseCategory.php">Chinese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="Categories/VietnameCateogry.php">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="#">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="#">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/YangChow.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>Yangzhou fried rice is enjoying super high popularity across the country. One of the reasons why it is so famous is because 
+        of the picky requirements of the raw ingredients. It is made with rice that is stir-fried with vegetables and meat and typically includes ingredients such as ham, shrimp, 
+        peas, carrots, and eggs.</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>6 cups leftover white rice</li>
+        <li>2 large eggs, beaten</li>
+        <li>2 tablespoons of vegetable oil, butter, or lard can enhance the flavors of fried rice greatly. So you can try to change the oil type you use for fried rice. </li>
+        <li>¼ cup diced Chinese ham (or you can use char siu or sausage )</li>
+        <li>8-10 shrimp, deveined (optional)</li>
+        <li>½ cup green peas, both frozen peas or fresh ones </li>
+        <li>½ cup diced carrot, you can use frozen carrots or fresh ones</li>
+        <li>Pinch of salt to taste</li>
+        <li>¼ teaspoon ground white pepper</li>
+        <li>1 tablespoon light soy sauce, you can skip this but it adds a faint unami flavor to the fried rice. But it will also increase the moisture of the fried rice. </li>
+        <li>2 green onions, finely chopped</li>
+        <li>Pinch of msg to taste</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Slightly separate the grains of rice by slightly pressing the rice with a rice scoop.
+
+        <li>Heat up 1 tablespoon of cooking oil in a wok or a nonstick skillet or wok. Fry shrimp and ham dice until slightly seared. Transfer out.
+        </li>
+
+        <li>Add rice in, and use a turner to separate the rice.
+        </li>
+
+        <li>When the rice grain is slightly warm and hot. Add the remaining 1 tablespoon of cooking oil and pour in the beaten egg and the fried rice. Give a quick stir so the egg and rice can be mixed well quickly.
+        </li>
+
+        <li>Add green beans, carrots, ham, and shrimp, light soy sauce, and sprinkle a pinch of salt and white pepper. Give everything a big stir-fry and mix well. 
+        </li>
+
+        <li>Then add green onion and fry for another 30 seconds.
+        </li>
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  footer code
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -164,13 +158,11 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
   <script src="app.js"></script>
-  </script>
 </body>
 
 </html>
