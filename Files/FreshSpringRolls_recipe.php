@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="../style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,27 +19,27 @@
         </div>
         <ul>
           <li>
-            <a href="../index.html">
+            <a href="index.html">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="../categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="../about-us-page.html">
+            <a href="about-us-page.html">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="../login-page.php">
+            <a href="login-page.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="../signup-page.php">
+            <a href="signup-page.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -50,52 +49,81 @@
         <div class="top-navbar">
           <div class="hamburger">
             <a class="hamburger-icon" style="cursor: pointer">
-              <img src="../_Pictures/hamburger-menu.png" style="height: 20px">
+              <img src="_Pictures/hamburger-menu.png" style="height: 20px">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header-title">
-      <a href="../index.html" style="text-decoration: none; color: black">
+      <a href="index.html" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="../index.html">
-          <img src="../_Pictures/search-icon.png" alt="search-icon">
+        <a href="index.html">
+          <img src="_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
   </header>
 
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>American Category</h1>
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Vietnamese Fresh Spring Rolls</h3>
+        <h6>by Steven Tiu</h6>
+        <p>Posted on January 12, 2023</p>
       </div>
 
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="../_Pictures/FishPicatta.jpg" alt="Fish Piccata Image">
-          <div class="btn">
-            <a href="../FishPicatta_recipe.php">Fish Picatta</a>
-          </div>
-        </div>
+      <div class="recipe-picture" style="background-image: url('_Pictures/SpringRoll.jpg');"></div>
+    </section>
 
-        <div class="food">
-          <img src = "../_Pictures/buffalo-wings.jpg" alt = "Buffalo Wings Image">
-            <div class="btn">
-              <a href = "../BuffaloWings_recipe.php">Buffalo Wings</a>
-            </div>
-        </div>
+  </div>
 
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>These Vietnamese spring rolls are a refreshing change from the usual fried variety and have become a family favorite.</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>2 ounces rice vermicelli</li>
+        <li>8 rice wrappers (8.5 inch diameter)</li>
+        <li>8 large cooked shrimp - peeled, deveined and cut in half</li>
+        <li>2 leaves lettuce, chopped</li>
+        <li>3 tablespoons chopped fresh mint leaves</li>
+        <li>3 tablespoons chopped fresh cilantro</li>
+        <li>1 ⅓ tablespoons chopped fresh Thai basil</li>
+        
+
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Cook pasta uncovered, stirring occasionally, until the pasta is tender yet firm to the bite, 3 to 5 minutes. 
+        </li>
+
+        <li>Fill a large bowl with warm water. Dip one wrapper into the hot water for 1 second to soften. Lay wrapper flat; place 2 shrimp halves in a row across the center, add some vermicelli, lettuce, mint, cilantro, and basil, leaving about 2 inches uncovered on each side.
+        </li>
+
+        <li>Fold uncovered sides inward, then tightly roll the wrapper, beginning at the end with lettuce. Repeat with remaining ingredients. 
+        </li>
+
+       
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  footer code
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -115,19 +143,15 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="../_Pictures/search-icon.png" alt="search-icon">
+              <img src="_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
- 
-
+  <script src="app.js"></script>
 </body>
-
-<script src="../app.js"></script>
 
 </html>

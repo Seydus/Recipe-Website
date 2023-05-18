@@ -230,8 +230,10 @@
   }
   
   .recipe-content{
+    display: flex;
+    flex-direction: column;
     margin-top: 55rem; 
-    margin-left: 30%;
+    margin-left: 27%;
   }
   
  
@@ -241,7 +243,7 @@
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.7rem;
-    width: 60%;
+    width: 65%;
     height: 16rem;
     margin-bottom: -3.5rem;
     
@@ -253,7 +255,7 @@
     border-radius: 20px;
     background-color: #eceaea;
     padding: 4px;
-    width:60%;
+    width:65%;
     height:49rem; 
     margin-bottom: 2rem; 
   }

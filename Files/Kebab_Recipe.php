@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>Categories</title>
-  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <title>recipe</title>
+  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -25,7 +24,7 @@
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="categories.html">
               <span class="item">Categories</span>
             </a>
           </li>
@@ -70,77 +69,75 @@
       </form>
     </div>
   </header>
-  <div class="content">
-    <div class="content-categories-food">
-      <div class="content-categories-title">
-        <h1>Categories</h1>
+
+  <div class="recipe-headers">
+    <section>
+      <div class="recipe-title">
+        <h3>Kafta Kebab</h3>
+        <h6>by Steven Tiu</h6>
+        <p>Posted on April 28, 2023</p>
       </div>
-      <div class="content-categories-food-list">
-        <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/ChineseCategory.php">Chinese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
-          <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
-          <div class="btn">
-            <a href="Categories/VietnameCateogry.php">Vietnamese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
-          <div class="btn">
-            <a href="Categories/IndianCategory.php">Indian</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
-          <div class="btn">
-            <a href="#">Korean</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
-          <div class="btn">
-            <a href="Categories/JapaneseCategory.php">Japanese</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
-          <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
-          <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
-          <div class="btn">
-            <a href="Categories/ArabicCategory.php">Arabic</a>
-          </div>
-        </div>
-        <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
-          <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
-          </div>
-        </div>
-      </div>
+
+      <div class="recipe-picture" style="background-image: url('_Pictures/kebab.jpg');"></div>
+    </section>
+
+  </div>
+
+  <div class="recipe-content">
+
+    <div class="recipe-dish-description">
+
+      <p>These kebabs are hearty, delicious and go with a variety of options. 
+        You can make a shawarma with them or serve alongside Lebanese rice. They go so well with Fattoush or a simple garlic sauce.</p>
+
+    </div>
+
+    <div class="recipe-ingredients-instructions">
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>500 g mince beef</li>
+        <li>3 tablespoon parsley chopped</li>
+        <li>2 tablespoon mint chopped</li>
+        <li>1 small onion chopped</li>
+        <li>1-2 green chilies sliced</li>
+        <li>4 cloves garlic minced </li>
+        <li>1 tablespoon fresh ginger</li>
+        <li>½ teaspoon nutmeg powder</li>
+        <li>½ teaspoon garam masala</li>
+        <li>1 slice sandwich bread</li>
+        <li>1 teaspoon salt and pepper to taste</li>
+        <li>1 ½ teaspoon cumin powder</li>
+        <li>1½ teaspoon garam masala </li>
+        <li>2 green onions, finely chopped</li>
+        <li>1 egg whisked</li>
+        <li>1 ½ teaspoon coriander powder</li>
+      </ul>
+
+      <h3>Instructions</h3>
+      <ol>
+        <li>Break the slice of bread in a small bowl and add 2-3 tablespoon milk to it. Crush with a fork.
+
+        <li>Then add all the ingredients to the mince beef along with the bread.
+        </li>
+
+        <li>Grind everything in a food processor or chopper to combine well.
+        </li>
+
+        <li>Moisten your hands with water and make flat, oblong kebabs
+        </li>
+
+        <li>On a grill pan or outdoor grill, cook these for around 8-10 mins in total. Flip sides in between. 
+        </li>
+
+        <li>Remove on a plate and serve with garlic sauce or yogurt dressing.
+        </li>
+      </ol>
     </div>
   </div>
 
-<footer class="main-footer">
+  footer code
+  <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -164,13 +161,11 @@
             </a>
           </form>
         </div>
-        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
   
   <script src="app.js"></script>
-  </script>
 </body>
 
 </html>

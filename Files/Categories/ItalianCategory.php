@@ -117,7 +117,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="_Pictures/search-icon.png" alt="search-icon">
+            <img src="../_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
