@@ -80,7 +80,7 @@
         <div class="food">
           <img src="../_Pictures/ChickenAdobo.jpg" alt="Chicken Adobo Image">
           <div class="btn">
-            <a href="../AdoboManok.php">Adobong Manok</a>
+            <a href="../AdoboManok_recipe.html">Adobong Manok</a>
           </div>
         </div>
 
@@ -111,7 +111,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-            <img src="../_Pictures/search-icon.png" alt="search-icon">
+              <img src="_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
@@ -120,8 +120,8 @@
     </div>
   </footer>
   
-  <script src="../app.js"></script>
-  
+  <script src="app.js"></script>
+  </script>
 </body>
 
 </html>

@@ -70,7 +70,6 @@
       </form>
     </div>
   </header>
-
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
@@ -79,19 +78,16 @@
 
       <div class="content-categories-food-list">
         <div class="food">
-          <img src="../_Pictures/FishPicatta.jpg" alt="Fish Piccata Image">
+          <img src="../_Pictures/FishPicatta.jpg" alt="Spaghetti Image">
           <div class="btn">
             <a href="../FishPicatta_recipe.php">Fish Picatta</a>
           </div>
         </div>
 
-        <div class="food">
-          <img src = "../_Pictures/buffalo-wings.jpg" alt = "Buffalo Wings Image">
-            <div class="btn">
-              <a href = "../BuffaloWings_recipe.php">Buffalo Wings</a>
-            </div>
-        </div>
 
+
+
+      
     </div>
   </div>
 
@@ -115,7 +111,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="../_Pictures/search-icon.png" alt="search-icon">
+              <img src="_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
@@ -124,10 +120,8 @@
     </div>
   </footer>
   
- 
-
+  <script src="app.js"></script>
+  </script>
 </body>
-
-<script src="../app.js"></script>
 
 </html>

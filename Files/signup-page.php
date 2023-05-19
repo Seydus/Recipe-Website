@@ -1,6 +1,6 @@
 <?php
 
-  include 'signup-code.php'; 
+  include 'dbconn.php'; 
 
 ?>
 
@@ -84,16 +84,16 @@
 
       <form method = "POST" action = "signup-code.php">
         <h2 class = "register-header">Sign Up Here!</h2>
-          <input type="text" name="username" placeholder="Username" require>
-          <input type="text" name="fname" placeholder="First Name" require>
-          <input type="text" name="lname" placeholder="Last Name" require>
-          <input type = "text" name = "email" placeholder = "Email" require> 
-          <input type="password" name="password" placeholder="Password" require>
-          <input type="submit" value="Sign Up" name = "submit">
+          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+          <input type = "text" id = "login" class = "fadeIn second" name = "email" placeholder = "Email"> 
+          <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+          <input type="submit" class="fadeIn fourth" value="Sign Up" name = "submit">
       </form>
 
 </div>
     
 <script src="app.js"></script>
+
+
 
 </html>

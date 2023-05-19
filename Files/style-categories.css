@@ -200,7 +200,6 @@ body.active .wrapper .section {
 
 .content {
   height: 100%;
-  margin-bottom: 200px;
 }
 
 .content-categories-title {
@@ -235,9 +234,8 @@ body.active .wrapper .section {
 }
 
 .content-categories-food-list .food .btn {
-  margin: 14px;
+    margin: 14px;
 }
-
 
 .content-categories-food-list .food .btn a {
   padding: 8px 18px 8px 18px;
@@ -249,7 +247,6 @@ body.active .wrapper .section {
   cursor: pointer;
   background: black;
 }
-
 
 /*
 .btn{
@@ -277,14 +274,10 @@ body.active .wrapper .section {
   width: 100%;
   height: 200px;
   padding: 2rem 2rem 2rem 2rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-
 }
 
 .main-footer-container {
- display: flex;  
+  display: flex;
   justify-content: space-evenly;
 }
 

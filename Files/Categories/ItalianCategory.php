@@ -84,12 +84,6 @@
           </div>
         </div>
 
-        <div class="food">
-          <img src="../_Pictures/Risotto.jpg" alt="Risotto Image">
-          <div class="btn">
-            <a href="../Risotto.php">Parmesan Risotto</a>
-          </div>
-        </div>
 
 
 
@@ -117,7 +111,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-            <img src="../_Pictures/search-icon.png" alt="search-icon">
+              <img src="_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
@@ -126,8 +120,8 @@
     </div>
   </footer>
   
-  <script src="../app.js"></script>
-  
+  <script src="app.js"></script>
+  </script>
 </body>
 
 </html>

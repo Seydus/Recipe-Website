@@ -76,20 +76,19 @@
 </header>
 
 <div class="body"></div>
-<br>
+<div class="header">
 
+</div><br>
 <div class="login">
   <div class="login-container">
     <form method="POST" action="">
-      <h1> Login </h1>
-      <input type="text" placeholder="Username" name="username"><br>
-      <input type="password" placeholder="Password" name="password"><br>
+      <input type="text" placeholder="username" name="username"><br>
+      <input type="password" placeholder="password" name="password"><br>
       <input type="submit" value="Login" name="submit">
     </form>
 
   </div>
 </div>
-
 
 <script src="app.js"></script>
 

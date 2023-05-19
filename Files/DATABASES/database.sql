@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2023 at 01:58 PM
+-- Generation Time: May 19, 2023 at 09:43 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `website-signup`
+-- Database: `website-signup-updated`
 --
 
 -- --------------------------------------------------------
@@ -46,6 +46,23 @@ INSERT INTO `account_details` (`ID`, `Fname`, `Lname`, `Username`, `Email`, `Pas
 (10, 'Cedric', 'Rafanan', 'CedRaf', 'craf@gmail.com', '0000'),
 (11, 'Steven', 'Tiu', 'ElDorito', 'sTiu@gmail.com', 'abcd');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `recipes`
+--
+
+CREATE TABLE `recipes` (
+  `id` int(250) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `author` varchar(100) NOT NULL,
+  `posted-date` varchar(100) NOT NULL,
+  `img` varchar(100) NOT NULL,
+  `description` mediumtext NOT NULL,
+  `ingredients` mediumtext NOT NULL,
+  `instruction` mediumtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -57,6 +74,12 @@ ALTER TABLE `account_details`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `recipes`
+--
+ALTER TABLE `recipes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -65,6 +88,12 @@ ALTER TABLE `account_details`
 --
 ALTER TABLE `account_details`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `recipes`
+--
+ALTER TABLE `recipes`
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
