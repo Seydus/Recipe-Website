@@ -124,43 +124,4 @@ session_start();
 
   <script src="app.js"></script>
 </body>
-
 </html>
-
-<?php
-$authorId = $_SESSION['user_id'];
-$sql = "SELECT Username FROM account_details WHERE id = '$authorId'";
-echo $authorId;
-
-if (isset($_POST['submit'])) {
-  $title = $_POST['title'];
-  $postedDate = date("F d, Y");
-  $authorId = $_SESSION['user_id'];
-  $author = getAuthorName($authorId, $conn);
-
-  $description = $_POST['description'];
-  $ingredients = $_POST['ingredients'];
-  $instruction = $_POST['instruction'];
-
-  $image = $_FILES['image'];
-  $imagePath = '_Pictures/' . $image['name'];
-
-  move_uploaded_file($image['tmp_name'], $imagePath);
-
-  $tags = getAllTags();
-  $formattedIngredients = compactInfoToList($ingredients, 'bullet');
-  $formattedInstruction = compactInfoToList($instruction, 'number');
-  onInsertInDatabase($title, $postedDate, $author, $description, $formattedIngredients, $formattedInstruction, $tags, $imagePath, $conn);
-}
-
-function getAuthorName($authorId, $conn) {
-  $sql = "SELECT Username FROM account_details WHERE id = '$authorId'";
-  $result = mysqli_query($conn, $sql);
-  
-  if (mysqli_num_rows($result) == 1) {
-    $authorData = mysqli_fetch_assoc($result);
-    return $authorData['Username'];
-  } else {
-    return "Unknown";
-  }
-}
