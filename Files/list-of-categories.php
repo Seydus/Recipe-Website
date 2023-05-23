@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Categories</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="style-categories.css" rel="stylesheet" type="text/css" />
+  <link href="style-list-of-categories.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html" class="active">
+            <a href="list-of-categories.php" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -57,83 +57,109 @@
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="index.php" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
+        <a href="index.php">
           <img src="_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
   </header>
+
   <div class="content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Categories</h1>
+        <div class="title">
+          <h1>Categories</h1>
+        </div>
+        <div class="add-recipe">
+          <a href="submit-recipe.php">Add Recipe</a>
+        </div>
       </div>
-      <div class="content-categories-food-list">
+        <div class="content-categories-food-list">
         <div class="food">
-          <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
+          <a href="Category/chinese-category.php">
+            <img src="_Pictures/chinesefood.jpg" alt="Chinese Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Chinese</a>
+            <a href="Category/chinese-category.php">Chinese</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
+        <a href="Category/american-category.php">
+        <img src="_Pictures/americanfood.jpg" alt="American Cuisine">
+          </a>
           <div class="btn">
-            <a href="Categories/AmericanCategory.php">American</a>
+            <a href="Category/american-category.php">American</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
+        <a href="Category/vietnamese-category.php">
+        <img src="_Pictures/vietnamesefood.jpg" alt="Vietnamese Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Vietnamese</a>
+            <a href="Category/vietnamese-category.php">Vietnamese</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
+        <a href="Category/indian-category.php">
+        <img src="_Pictures/indianfood.jpg" alt="Indian Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Indian</a>
+            <a href="Category/indian-category.php">Indian</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
+        <a href="Category/korean-category.php">
+        <img src="_Pictures/koreanfood.jpg" alt="Korean Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Korean</a>
+            <a href="Category/korean-category.php">Korean</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
+        <a href="Category/japanese-category.php">
+        <img src="_Pictures/japanesefood.jpg" alt="Japanese Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Japanese</a>
+            <a href="Category/japanese-category.php">Japanese</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
+        <a href="Category/mexican-category.php">
+        <img src="_Pictures/mexicanfood.jpg" alt="Chinese Cuisine">
+          </a>
           <div class="btn">
-            <a href="Categories/MexicanCategory.php">Mexican</a>
+            <a href="Category/mexican-category.php">Mexican</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
+        <a href="Category/filipino-category.php">
+        <img src="_Pictures/filipinofood.jpg" alt="Filipino Cuisine">
+          </a>
           <div class="btn">
-            <a href="Categories/FilipinoCategory.php">Filipino</a>
+            <a href="Category/filipino-category.php">Filipino</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
+        <a href="Category/arabic-category.php">
+        <img src="_Pictures/arabic.jpg" alt="Arabic Cuisine">
+          </a>
           <div class="btn">
-            <a href="#">Arabic</a>
+            <a href="Category/arabic-category.php">Arabic</a>
           </div>
         </div>
         <div class="food">
-          <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
+        <a href="Category/italian-category.php">
+        <img src="_Pictures/italianfood.jpg" alt="Italian Cuisine">
+          </a>
           <div class="btn">
-            <a href="Categories/ItalianCategory.php">Italian</a>
+            <a href="Category/italian-category.php">Italian</a>
           </div>
         </div>
       </div>

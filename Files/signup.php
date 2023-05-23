@@ -1,12 +1,4 @@
-<?php
-
-  include 'dbconn.php'; 
-
-?>
-
-
 <!DOCTYPE html>
-<html lang="en">
 <html>
 
 <head>
@@ -27,27 +19,27 @@
       </div>
       <ul>
         <li>
-          <a href="index.html">
+          <a href="index.php">
             <span class="item">Home</span>
           </a>
         </li>
         <li>
-          <a href="categories.html">
+          <a href="list-of-categories.php">
             <span class="item">Categories</span>
           </a>
         </li>
         <li>
-          <a href="about-us-page.html">
+          <a href="about-us.php">
             <span class="item">About Us</span>
           </a>
         </li>
         <li>
-          <a href="login-page.php" class="active">
+          <a href="login.php" class="active">
             <span class="item">Log In</span>
           </a>
         </li>
         <li>
-          <a href="signup-page.php">
+          <a href="signup.php">
             <span class="item"><b>Sign Up</b></span>
           </a>
         </li>
@@ -64,14 +56,14 @@
     </div>
   </div>
   <div class="main-header-title">
-    <a href="index.html" style="text-decoration: none; color: black">
+    <a href="index.php" style="text-decoration: none; color: black">
       <h2>Tasty Trove</h2>
     </a>
   </div>
   <div class="main-header-search">
     <form class="search-bar" action="/search">
       <input name="given-search-input" type="text" required="required" placeholder="Search...">
-      <a href="index.html">
+      <a href="index.php">
         <img src="_Pictures/search-icon.png" alt="search-icon">
       </a>
     </form>
@@ -80,20 +72,41 @@
 
 <div class="bg"></div>
 
-<div class = "register" id = "register-form">
+<div class="register" id="register-form">
 
-      <form method = "POST" action = "signup-code.php">
-        <h2 class = "register-header">Sign Up Here!</h2>
-          <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
-          <input type = "text" id = "login" class = "fadeIn second" name = "email" placeholder = "Email"> 
-          <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
-          <input type="submit" class="fadeIn fourth" value="Sign Up" name = "submit">
-      </form>
+  <form method="POST" action="">
+    <h2 class="register-header">Sign Up Here!</h2>
+    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
+    <input type="text" id="login" class="fadeIn second" name="email" placeholder="Email">
+    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+    <input type="submit" class="fadeIn fourth" value="Sign Up" name="submit">
+  </form>
 
 </div>
-    
 <script src="app.js"></script>
-
-
-
 </html>
+
+<?php
+include 'dbconn.php';
+
+if (isset($_POST['submit'])) {
+
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+
+  insertEmp($username, $email, $password, $conn);
+}
+
+function insertEmp($username, $email, $password, $conn)
+{
+
+  $insert = "INSERT INTO account_details (Username, Email, Password) VALUES ('$username', '$email', '$password')";
+
+  if (mysqli_query($conn, $insert)) {
+    header("Location: login.php");
+    exit;
+  } else {
+    echo "Failed to insert employee" . mysqli_error($conn);
+  }
+}

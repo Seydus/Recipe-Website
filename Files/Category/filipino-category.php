@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link href="style-about-us.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width">
+  <title>Categories</title>
+  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
+  <link href="../style-category.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -19,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="../index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html">
+            <a href="../list-of-categories.php" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html" class="active">
+            <a href="../about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="../login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="../signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -49,63 +50,76 @@
         <div class="top-navbar">
           <div class="hamburger">
             <a class="hamburger-icon" style="cursor: pointer">
-              <img src="_Pictures/hamburger-menu.png" style="height: 20px">
+              <img src="../_Pictures/hamburger-menu.png" style="height: 20px">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="../index.php" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
-          <img src="_Pictures/search-icon.png" alt="search-icon">
+        <a href="../index.php">
+          <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
   </header>
   <div class="content">
-    <div class="content-main-container">
-      <div class="content-categories-admin-list">
-        <div class="admin">
-          <img src="_Pictures/Steven.jpg" alt="Steven">
-        </div>
-        <div class="admin">
-          <img src="_Pictures/Cedric2.png" alt="Cedric">
-        </div>
-        <div class="admin">
-          <img src="_Pictures/rhenz.jpg" alt="Rhenz">
-        </div>
-        <div class="admin">
-          <img src="_Pictures/Weljohn.jpg" alt="Weljohn">
-        </div>
+      <div class="wrapper-content">
+    <div class="content-categories-food">
+      <div class="content-categories-title">
+        <h1>Filipino Category</h1>
       </div>
-    </div>
-    <div class="spacing">
-      <div class="paragraph">
-        <h3>About Us</h3>
-        <p>Hi! We are first-year Computer Science students from the University of San Carlos and here is our website.
-          This
-          website was created in partial fulfillment of our Web Development 1 class and we hope to improve it further
-          down
-          the line. Thank you for visiting</p>
-      </div>
-      <div class="paragraph">
-        <h3>Purpose</h3>
-        <p>Our website aims to provide food recipes for anyone who needs them, while also allowing them to post/upload
-          their own unique recipes for popular dishes. (sitename) enables its users to view and use for themselves, any
-          recipe they may come
-          across regardless of their skill level when it comes to cooking. “I feel a recipe is only a theme which an
-          intelligent cook can play each time with a variation.” — Madam Benoit </p>
+      <div class="content-categories-food-list">
+  <?php
+    include 'dbconn-category.php';
+        
+    $getIds = "SELECT * FROM recipes";
+    
+    $result = mysqli_query($conn, $getIds);
+
+    if($result)
+    {
+      while($row = mysqli_fetch_assoc($result))
+      {
+        $tags = explode(', ', $row['tags']);
+
+        foreach($tags as $tag)
+        {
+          if($tag == "Filipino")
+          {
+            echo "
+              <div class='categories-food-list-food'>
+                <a href='../recipe-information.php?id=" . $row['id'] . "'>
+                  <img src='../" . $row['image-path'] . "' alt='food image'>
+                </a>
+                <div class='categories-food-list-button'>
+                  <a href='../recipe-information.php?id=" . $row['id'] . "'>" . $row['title'] . "</a>
+                </div>
+              </div>
+            ";
+          }
+        }
+      }
+    }
+    else
+    {
+      echo "Error executing the data: " . mysqli_error($conn);
+    }
+
+    mysqli_close($conn);
+  ?>
       </div>
     </div>
   </div>
-  <footer class="main-footer">
+  </div>
+<footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -125,7 +139,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="_Pictures/search-icon.png" alt="search-icon">
+              <img src="../_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
@@ -133,7 +147,8 @@
       </div>
     </div>
   </footer>
-  <script src="app.js"></script>
+
+  <script src="../app.js"></script>
 </body>
 
 </html>

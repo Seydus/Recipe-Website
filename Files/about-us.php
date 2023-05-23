@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width">
-  <title>Recipe</title>
-  <link href="style-recipe.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="style-about-us.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -19,27 +19,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html">
+            <a href="list-of-categories.php">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="about-us.php" class="active">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -69,66 +69,42 @@
       </form>
     </div>
   </header>
-
-  <div class="recipe-headers">
-    <section>
-      <div class="recipe-title">
-        <h3>Adobong Manok</h3>
-        <h6>by Rhenz Largo</h6>
-        <p>Posted on December 21, 2022</p>
+  <div class="content">
+    <div class="content-main-container">
+      <div class="content-categories-admin-list">
+        <div class="admin">
+          <img src="_Pictures/Steven.jpg" alt="Steven">
+        </div>
+        <div class="admin">
+          <img src="_Pictures/Cedric2.png" alt="Cedric">
+        </div>
+        <div class="admin">
+          <img src="_Pictures/rhenz.jpg" alt="Rhenz">
+        </div>
+        <div class="admin">
+          <img src="_Pictures/Weljohn.jpg" alt="Weljohn">
+        </div>
       </div>
-
-      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenAdobo.jpg');"></div>
-    </section>
-
-  </div>
-
-  <div class="recipe-content">
-
-    <div class="recipe-dish-description">
-
-      <p>Adobong manok, often called "chicken adobo," is often considered the national dish of the Philippines. Although
-        the origins of its name are with the Spanish colonizers — adobo is the Spanish word for a marinade — Filipinos
-        have been making tart, vinegar-based dishes since time immemorial. The vinegar marinade makes a dish that stores
-        very well in the Filipino heat. Endless varieties of adobo exist and each region has its own specialty. Besides
-        chicken and pork, adobo can be made with fish, squid, green bean and even eggplant.</p>
-
     </div>
-
-    <div class="recipe-ingredients-instructions">
-
-      <h3>Ingredients</h3>
-      <ul>
-        <li>2 lbs. Chicken cut into serving pieces</li>
-        <li>1 piece Knorr Chicken Cube</li>
-        <li>1 head garlic crushed</li>
-        <li>1 piece onion chopped</li>
-        <li>6 pieces dried bay leaves</li>
-        <li>1 tablespoon whole peppercorn</li>
-        <li>½ cup soy sauce</li>
-        <li>5 tablespoons white vinegar</li>
-        <li>1 ½ tablespoons dark brown sugar</li>
-        <li>2 cups water</li>
-        <li>3 tablespoons cooking oil</li>
-        <li>Salt to taste</li>
-      </ul>
-
-      <h3>Instructions</h3>
-      <ol>
-        <li>Heat oil in a cooking pot. Saute garlic and onion until the garlic turns light brown and the onion softens.
-        </li>
-        <li>Add chicken pieces. Cook until the chicken turns light brown.</li>
-        <li>Pour water, soy sauce, and vinegar. Let boil.</li>
-        <li>Add Knorr Chicken Cube, whole peppercorn, and dried bay leaves. Stir. Cover the pot and cook in medium heat
-          for 15 minutes.</li>
-        <li>Turn the chicken pieces over. Cover and continue to cook for another 15 minutes.</li>
-        <li>Add dark brown sugar and season with salt.</li>
-        <li>Transfer to a serving bowl. Serve. Share and enjoy!</li>
-      </ol>
+    <div class="spacing">
+      <div class="paragraph">
+        <h3>About Us</h3>
+        <p>Hi! We are first-year Computer Science students from the University of San Carlos and here is our website.
+          This
+          website was created in partial fulfillment of our Web Development 1 class and we hope to improve it further
+          down
+          the line. Thank you for visiting</p>
+      </div>
+      <div class="paragraph">
+        <h3>Purpose</h3>
+        <p>Our website aims to provide food recipes for anyone who needs them, while also allowing them to post/upload
+          their own unique recipes for popular dishes. (sitename) enables its users to view and use for themselves, any
+          recipe they may come
+          across regardless of their skill level when it comes to cooking. “I feel a recipe is only a theme which an
+          intelligent cook can play each time with a variation.” — Madam Benoit </p>
+      </div>
     </div>
   </div>
-
-  <!-- footer code -->
   <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
@@ -153,10 +129,10 @@
             </a>
           </form>
         </div>
+        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
-  
   <script src="app.js"></script>
 </body>
 

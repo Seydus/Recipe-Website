@@ -17,6 +17,25 @@ function myFunction() {
   }
 }
 
+// function adjustFooter() {
+//   const wrapper = document.querySelector('.wrapper');
+//   const footer = document.querySelector('.main-footer');
+//   const wrapperHeight = wrapper.offsetHeight;
+//   const windowHeight = window.innerHeight;
+
+//   if (wrapperHeight < windowHeight) {
+//     const footerHeight = footer.offsetHeight;
+//     const remainingHeight = windowHeight - wrapperHeight;
+//     footer.style.marginTop = remainingHeight + 'px';
+//   } else {
+//     footer.style.marginTop = 'auto';
+//   }
+// }
+
+// // Call the adjustFooter function initially and on window resize
+// window.addEventListener('load', adjustFooter);
+// window.addEventListener('resize', adjustFooter);
+
 const tagsInput = document.querySelector('.tags-input');
 const select = tagsInput.querySelector('#tag-select');
 const tagsContainer = tagsInput.querySelector('.tags-container');
@@ -27,7 +46,11 @@ function addTag() {
   if (tag) {
     const tagElement = document.createElement('div');
     tagElement.classList.add('tag');
-    tagElement.innerHTML = `<span>${tag}</span><button>x</button>`;
+    tagElement.innerHTML = `
+      <span>${tag}</span>
+      <input type="hidden" name="tag[]" value="${tag}">
+      <button>x</button>
+    `;
     tagsContainer.appendChild(tagElement);
 
     const option = select.querySelector(`option[value="${tag}"]`);

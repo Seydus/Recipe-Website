@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>recipe</title>
-  <link href="style-fish-picatta.css" rel="stylesheet" type="text/css" />
+  <title>Tasty Trove</title>
+  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
+  <link href="style-index.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -19,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="index.php" class="active">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html">
+            <a href="list-of-categories.php">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -69,72 +70,54 @@
       </form>
     </div>
   </header>
-
-  <div class="recipe-headers">
-    <section>
-      <div class="recipe-title">
-        <h3>Buffalo Wings</h3>
-        <h6>by Cedric Rafanan</h6>
-        <p>Posted on July 27, 2022</p>
+  <div class="content">
+    <div class="content-main-container">
+      <div class="find-a-recipe-title">
+        <h1>Find a Recipe</h1>
       </div>
-
-      <div class="recipe-picture" style="background-image: url('_Pictures/buffalo-wings2.jpg');"></div>
-    </section>
-
-  </div>
-
-  <div class="recipe-content">
-
-    <div class="recipe-dish-description">
-
-      <p>Buffalo wings, that ever-popular dish consisting of deep-fried chicken wings, slathered in spicy sauce and 
-        served with blue cheese dressing and raw celery and carrots, are one of those few lucky foods that are famous enough
-        to boast their very own creation myth. Heres how to make them!</p>
-
+      <div class="find-a-recipe-search">
+        <input type="text" placeholder="Search...">
+        <a href="index.html">
+          <img src="_Pictures/search-icon.png" alt="search-icon">
+        </a>
+      </div>
     </div>
+    <div class="content-highlight">
+      <div class="content-hightlight-title">
+        <h1>
+          Our Newest Recipes
+        </h1>
+      </div>
+      <section class="content-highlight-elements">
+        <?php
+        include 'dbconn.php';
 
-    <div class="recipe-ingredients-instructions">
+        $getIds = "SELECT * FROM recipes ORDER BY RAND() LIMIT 4";
 
-      <h3>Ingredients</h3>
-      <ul>
-        <li>½ cup all-purpose flour</li>
-        <li>¼ teaspoon ground paprika</li>
-        <li>¼ teaspoon cayenne pepper</li>
-        <li>¼ teaspoon salt</li>
-        <li>10 chicken wings</li>
-        <li>2 cups vegetable oil for frying, or as needed</li>
-        <li>¼ cup butter</li>
-        <li>¼ cup hot sauce</li>
-        <li>1 pinch ground black pepper</li>
-        <li>1 pinch garlic powder</li>
-      </ul>
+        $result = mysqli_query($conn, $getIds);
 
-      <h3>Instructions</h3>
-      <ol>
-        <li>Whisk together flour, paprika, cayenne pepper, and salt in a large bowl.
-        </li>
+        if ($result) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo "
+        <div class='che'>
+        <a href='recipe-information.php?id=" . $row['id'] . "'>
+          <img src='" . $row['image-path'] . "' alt='food image'>
+        </a>
+        <div class='che-description'>
+        <a href='recipe-information.php?id=" . $row['id'] . "'>" . $row['title'] . "</a>
+        </div>
+      </div>
+        ";
+          }
+        } else {
+          echo "Error executing the data: " . mysqli_error($conn);
+        }
 
-        <li>Place chicken wings in the bowl with flour mixture and toss until evenly coated. Transfer wings to a 9x13-inch glass baking dish and arrange in a single layer. 
-            Cover and refrigerate for 1 to 1 1/2 hours.
-        </li>
-
-        <li>Add about 1 inch oil to a deep, heavy skillet; heat to 375 degrees F (190 degrees C). (The oil should be just enough to cover wings entirely.)
-        </li>
-
-        <li>Meanwhile, combine butter, hot sauce, pepper, and garlic powder in a separate small saucepan over low heat. Cook and stir until butter is melted and mixture is thoroughly blended.
-             Remove from the heat and reserve for serving.
-        </li>
-
-        <li>Fry coated wings in the hot oil for 10 to 15 minutes, or until they begin to crisp and turn brown. Maintain the oil temperature while cooking. Remove cooked wings from hot oil and let drain on paper towels or a wire rack.
-        </li>
-
-        <li>Transfer wings to a platter and drizzle hot sauce over top; or mix wings and hot sauce in a bowl until coated.
-        </li>
-      </ol>
+        mysqli_close($conn);
+        ?>
+      </section>
     </div>
   </div>
-
-  <!-- footer code -->
   <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
@@ -159,11 +142,15 @@
             </a>
           </form>
         </div>
+        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
-  
   <script src="app.js"></script>
 </body>
 
 </html>
+
+<?php
+
+?>

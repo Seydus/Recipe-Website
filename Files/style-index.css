@@ -297,9 +297,21 @@ body.active .wrapper .section {
   object-position: center;
 }
 
-.che .che-description h4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.che {
+  flex: 1;
+}
+
+.che-description {
+  margin: 5px 0px;
+}
+
+.che-description a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .che .che-description p {

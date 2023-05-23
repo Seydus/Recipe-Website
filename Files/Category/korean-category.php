@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Categories</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link href="../style-categories.css" rel="stylesheet" type="text/css" />
+  <link href="../style-category.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="../index.html">
+            <a href="../index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="../categories.html" class="active">
+            <a href="../list-of-categories.php" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="../about-us-page.html">
+            <a href="../about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="../login-page.php">
+            <a href="../login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="../signup-page.php">
+            <a href="../signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -57,40 +57,68 @@
       </div>
     </div>
     <div class="main-header-title">
-      <a href="../index.html" style="text-decoration: none; color: black">
+      <a href="../index.php" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="../index.html">
+        <a href="../index.php">
           <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
   </header>
   <div class="content">
+      <div class="wrapper-content">
     <div class="content-categories-food">
       <div class="content-categories-title">
-        <h1>Indian Category</h1>
+        <h1>Korean Category</h1>
       </div>
-
       <div class="content-categories-food-list">
-        <div class="food">
-          <img src="../_Pictures/ChickenCurry.jpg" alt="Chicken Curry Image">
-          <div class="btn">
-            <a href="../ChickenCurry.php">Murg Kari</a>
-          </div>
-        </div>
+  <?php
+    include 'dbconn-category.php';
+        
+    $getIds = "SELECT * FROM recipes";
+    
+    $result = mysqli_query($conn, $getIds);
 
+    if($result)
+    {
+      while($row = mysqli_fetch_assoc($result))
+      {
+        $tags = explode(', ', $row['tags']);
 
+        foreach($tags as $tag)
+        {
+          if($tag == "Korean")
+          {
+            echo "
+              <div class='categories-food-list-food'>
+                <a href='../recipe-information.php?id=" . $row['id'] . "'>
+                  <img src='../" . $row['image-path'] . "' alt='food image'>
+                </a>
+                <div class='categories-food-list-button'>
+                  <a href='../recipe-information.php?id=" . $row['id'] . "'>" . $row['title'] . "</a>
+                </div>
+              </div>
+            ";
+          }
+        }
+      }
+    }
+    else
+    {
+      echo "Error executing the data: " . mysqli_error($conn);
+    }
 
-
-      
+    mysqli_close($conn);
+  ?>
+      </div>
     </div>
   </div>
-
+  </div>
 <footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
@@ -111,7 +139,7 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-            <img src="../_Pictures/search-icon.png" alt="search-icon">
+              <img src="../_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
@@ -119,9 +147,8 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="../app.js"></script>
-  
 </body>
 
 </html>

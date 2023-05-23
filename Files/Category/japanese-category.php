@@ -5,19 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style-recipe.css" rel="stylesheet" type="text/css" />
+  <title>Categories</title>
+  <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
+  <link href="../style-category.css" rel="stylesheet" type="text/css" />
 </head>
-
-<?php
-  include 'dbconn.php';
-
-  $id = $_GET['id'];
-
-  $getdata = "SELECT * FROM recipes WHERE id = " . 5;
-
-  $result = mysqli_query($conn, $getdata);
-?>
 
 <body>
   <header class="main-header" id="main-header-id">
@@ -29,27 +20,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html">
+            <a href="../index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html">
+            <a href="../list-of-categories.php" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="../about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="../login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="../signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -59,67 +50,76 @@
         <div class="top-navbar">
           <div class="hamburger">
             <a class="hamburger-icon" style="cursor: pointer">
-              <img src="_Pictures/hamburger-menu.png" style="height: 20px">
+              <img src="../_Pictures/hamburger-menu.png" style="height: 20px">
             </a>
           </div>
         </div>
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="../index.php" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
     <div class="main-header-search">
       <form class="search-bar" action="/search">
         <input name="given-search-input" type="text" required="required" placeholder="Search...">
-        <a href="index.html">
-          <img src="_Pictures/search-icon.png" alt="search-icon">
+        <a href="../index.php">
+          <img src="../_Pictures/search-icon.png" alt="search-icon">
         </a>
       </form>
     </div>
   </header>
-
-  <div class="recipe-headers">
-    <section>
-      <div class="recipe-title">
-        <?php
-          while($row = mysqli_fetch_assoc($result))
-          {
-            echo "<h3>" . $row['title'] . "</h3>";
-            echo "<h6>by " . $row['author'] . "</h6>";
-            echo "<p>Pasted on " . $row['posted-date'] . "</p>";
-        ?>
+  <div class="content">
+      <div class="wrapper-content">
+    <div class="content-categories-food">
+      <div class="content-categories-title">
+        <h1>Japanese Category</h1>
       </div>
+      <div class="content-categories-food-list">
+  <?php
+    include 'dbconn-category.php';
+        
+    $getIds = "SELECT * FROM recipes";
+    
+    $result = mysqli_query($conn, $getIds);
 
-      <div class="recipe-picture" style="background-image: url('_Pictures/ChickenTortillaSoup.jpg');"></div>
-    </section>
+    if($result)
+    {
+      while($row = mysqli_fetch_assoc($result))
+      {
+        $tags = explode(', ', $row['tags']);
 
-  </div>
-
-  <div class="recipe-content">
-
-    <div class="recipe-dish-description">
-      <?php
-        echo "<p>" . $row['description'] . "</p>";
-        ?>
-    </div>
-
-    <div class="recipe-ingredients-instructions">
-      <h3>Ingredients</h3>
-      <?php
-        echo $row['ingredients'];
-      ?>
-
-      <h3>Instructions</h3>
-      <?php
-        echo $row['instruction'];
+        foreach($tags as $tag)
+        {
+          if($tag == "Japanese")
+          {
+            echo "
+              <div class='categories-food-list-food'>
+                <a href='../recipe-information.php?id=" . $row['id'] . "'>
+                  <img src='../" . $row['image-path'] . "' alt='food image'>
+                </a>
+                <div class='categories-food-list-button'>
+                  <a href='../recipe-information.php?id=" . $row['id'] . "'>" . $row['title'] . "</a>
+                </div>
+              </div>
+            ";
+          }
+        }
       }
-      ?>
+    }
+    else
+    {
+      echo "Error executing the data: " . mysqli_error($conn);
+    }
+
+    mysqli_close($conn);
+  ?>
+      </div>
     </div>
   </div>
-
-  <footer class="main-footer">
+  </div>
+<footer class="main-footer">
     <div class="main-footer-container">
       <div class="main-footer-title">
         <h2>Tasty Trove</h2>
@@ -139,15 +139,16 @@
           <form class="search-bar" action="/search">
             <input name="given-search-input" type="text" required="required" placeholder="Search...">
             <a href="index.html">
-              <img src="_Pictures/search-icon.png" alt="search-icon">
+              <img src="../_Pictures/search-icon.png" alt="search-icon">
             </a>
           </form>
         </div>
+        <p>Sign up to get updated to our latest recipes!</p>
       </div>
     </div>
   </footer>
-  
-  <script src="app.js"></script>
+
+  <script src="../app.js"></script>
 </body>
 
 </html>

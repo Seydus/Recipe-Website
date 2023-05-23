@@ -1,17 +1,23 @@
+<?php
+include 'dbconn.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tasty Trove</title>
   <link rel="shortcut icon" type="image/x-icon" href="_Pictures/logo.ico">
-  <link rel="stylesheet" type="text/css" href="style-submit-recipe.css">
+  <link rel="stylesheet" href="style-submit-recipe.css">
 </head>
 
 <body>
-    <header class="main-header" id="main-header-id">
+
+  <header class="main-header" id="main-header-id">
     <div class="wrapper">
       <div class="sidebar">
         <div class="profile">
@@ -20,27 +26,27 @@
         </div>
         <ul>
           <li>
-            <a href="index.html" class="active">
+            <a href="index.php">
               <span class="item">Home</span>
             </a>
           </li>
           <li>
-            <a href="categories.html">
+            <a href="list-of-categories.php" class="active">
               <span class="item">Categories</span>
             </a>
           </li>
           <li>
-            <a href="about-us-page.html">
+            <a href="about-us.php">
               <span class="item">About Us</span>
             </a>
           </li>
           <li>
-            <a href="login-page.php">
+            <a href="login.php">
               <span class="item">Log In</span>
             </a>
           </li>
           <li>
-            <a href="signup-page.php">
+            <a href="signup.php">
               <span class="item"><b>Sign Up</b></span>
             </a>
           </li>
@@ -57,7 +63,7 @@
       </div>
     </div>
     <div class="main-header-title">
-      <a href="index.html" style="text-decoration: none; color: black">
+      <a href="index.php" style="text-decoration: none; color: black">
         <h2>Tasty Trove</h2>
       </a>
     </div>
@@ -71,84 +77,90 @@
     </div>
   </header>
 
-  <h1>Add Recipe</h1>
-
-<form action="" method="POST">
-    <label for="title">Recipe Name:</label>
-    <input type="text" id="title" name="title" required>
-
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" rows="4" required></textarea>
-
-    <label for="ingredients">Ingredients:</label>
-    <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
-
-   <label for="instruction">Instruction:</label>
-   <textarea id="instruction" name="instruction" rows="6" required></textarea>
-
-    <div class="tags-input">
-    <div class="tags-container">
-        <div class="tag"><span>tag1</span><button>x</button></div>
-        <div class="tag"><span>tag2</span><button>x</button></div>
-        <div class="tag"><span>tag3</span><button>x</button></div>
+  <div class="content">
+    <div class="add-recipe-title">
+      <h1>Add Recipe</h1>
     </div>
-    <select id="tag-select">
-        <option value="">Select a tag</option>
-        <option value="tag4">Tag 4</option>
-        <option value="tag5">Tag 5</option>
-        <option value="tag6">Tag 6</option>
-    </select>
-</div>
 
-   <button type="Submit" name="submit">Submit</button>
-</div>
-</form>
-    <script src="app.js"></script>
+    <form action="submit-recipe-information.php" method="POST" enctype="multipart/form-data">
+      <div class="form-container">
+        <label for="title">Recipe Name:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+        <label for="instruction">Instruction:</label>
+        <textarea id="instruction" name="instruction" rows="6" required></textarea>
+
+        <label for="racipe-image">Recipe Image:</label>
+        <input class="upload-file" type="file" name="image" accept="image/*" required>
+
+        <label for="tags">Tags:</label>
+        <div class="tags-input">
+          <div class="tags-container">
+          </div>
+          <select class="tag-select" id="tag-select">
+            <option value="">Select a tag</option>
+            <option value="Chinese">Chinese</option>
+            <option value="American">American</option>
+            <option value="Vietnamese">Vietnamese</option>
+            <option value="Indian">Indian</option>
+            <option value="Korean">Korean</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Filipino">Filipino</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Italian">Italian</option>
+          </select>
+        </div>
+        <button class="submit-button" type="submit" name="submit" value="Upload">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
 
 <?php
-include 'dbconn.php';
+$authorId = $_SESSION['user_id'];
+$sql = "SELECT Username FROM account_details WHERE id = '$authorId'";
+echo $authorId;
 
-if(isset($_POST['submit']))
-{
-    $title = $_POST['title'];
-    $postedDate = date("F d, Y");
-    $author = $_POST['Username'];
+if (isset($_POST['submit'])) {
+  $title = $_POST['title'];
+  $postedDate = date("F d, Y");
+  $authorId = $_SESSION['user_id'];
+  $author = getAuthorName($authorId, $conn);
 
-    $description = $_POST['description'];
-    $ingredients = $_POST['ingredients'];
-    $instruction = $_POST['instruction'];
-    $tags = $_POST['tags'];
+  $description = $_POST['description'];
+  $ingredients = $_POST['ingredients'];
+  $instruction = $_POST['instruction'];
 
-    OnInsertInDatabase($title, $author, $postedDate, $description, CompactInfoToList($ingredients), CompactInfoToList($instruction), $tags, $conn);
+  $image = $_FILES['image'];
+  $imagePath = '_Pictures/' . $image['name'];
+
+  move_uploaded_file($image['tmp_name'], $imagePath);
+
+  $tags = getAllTags();
+  $formattedIngredients = compactInfoToList($ingredients, 'bullet');
+  $formattedInstruction = compactInfoToList($instruction, 'number');
+  onInsertInDatabase($title, $postedDate, $author, $description, $formattedIngredients, $formattedInstruction, $tags, $imagePath, $conn);
 }
 
-function CompactInfoToList($info)
-{
-    $lines = explode("\n", $info);
-    $formattedText = '<ul>';
-    foreach($lines as $line)
-    {
-        $formattedText .= '<li>' . trim($line) . '</li>';
-    }
-
-    $formattedText .= '</ul>';
-
-    return $formattedText;
-}
-
-function OnInsertInDatabase($title, $postedDate, $author, $description, $ingredients, $instruction, $tags, $conn)
-{
-    $insert = "INSERT INTO recipes (title, author, `posted-date`, description, ingredients, instruction, tags) 
-               VALUES ('$title', '$postedDate', '$author', '$description', '$ingredients', '$instruction', '$tags')";
-
-    if(mysqli_query($conn, $insert))
-    {
-        echo "<br>Data has been inserted!";
-    }
-    else
-    {
-        echo "Failed to insert data: " . mysqli_error($conn);
-    }
+function getAuthorName($authorId, $conn) {
+  $sql = "SELECT Username FROM account_details WHERE id = '$authorId'";
+  $result = mysqli_query($conn, $sql);
+  
+  if (mysqli_num_rows($result) == 1) {
+    $authorData = mysqli_fetch_assoc($result);
+    return $authorData['Username'];
+  } else {
+    return "Unknown";
+  }
 }
